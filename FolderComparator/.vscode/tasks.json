@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Beyond Compare and Python script",
+			"type": "shell",
+			"command": "& \"C:\\Users\\danie\\AppData\\Local\\Programs\\Beyond Compare 5\\BCompare.exe\" @script.txt; python .\\check_report.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

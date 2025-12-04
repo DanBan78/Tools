@@ -1,0 +1,6 @@
+#log normal log.txt
+criteria rules-based
+load "C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ" "C:\.temp\results\20240530_1030_SN4_PL0_DONE__2025-12-04_17-42"
+expand all
+select diff.files
+folder-report layout:summary options:display-mismatches output-to:"C:\.Github\Tools\FolderComparator\__report.txt"

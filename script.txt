@@ -1,0 +1,6 @@
+#log normal log.txt
+criteria rules-based
+load "D:\testy\WZOR" "D:\testy\folderB"
+expand all
+select diff.files
+folder-report layout:summary options:display-mismatches output-to:"D:\testy\Wyniki_porownan\report.txt"
