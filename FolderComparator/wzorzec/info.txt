@@ -1,0 +1,19 @@
+Model: model.pfb
+Subsystem: mainsub
+Date: 2025-12-05--14-00-34
+Duration: 00:04:32
+
+Input file settings: 
+Buses: True
+Transformers: True
+Generators: True
+Shunts: True
+Use input rules to whole network: False
+Used grid area number: 1
+
+Import message: Used original file: model.pfb
+
+Minimum upper generated MW limit for generators: 50
+Node KV +/- change: 1
+Transformer ratio precission error margin: 0.0075
+Shunt minimum absolute mvar value: 15

@@ -1,8 +1,2 @@
-2025-12-05 09:38:09 | Left: C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ | Right: C:\.Github\Tools\FolderComparator | Result: Niezgodne
-2025-12-05 09:38:23 | Left: C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ | Right: C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ | Result: Zgodne
-2025-12-05 09:38:32 | Left: C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ | Right: C:\.temp\results\20240530_1030_SN4_PL0_DONE__2025-12-04_17-42 | Result: Niezgodne
-2025-12-05 09:38:40 | Left: C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ | Right: C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ | Result: Zgodne
-2025-12-05 09:39:11 | Left: C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ | Right: C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ | Result: Zgodne
-2025-12-05 09:39:22 | Left: C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ | Right: C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ | Result: Zgodne
-2025-12-05 09:40:26 | Left: C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ | Right: C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ | Result: Zgodne
-2025-12-05 09:40:33 | Left: C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ | Right: C:\.temp\results\20240530_1030_SN4_PL0_DONE__2025-12-04_17-42 | Result: Niezgodne
+2025-12-05 14:38:18 | Left: C:\.Github\Tools\FolderComparator\wzorzec | Right: C:\.temp\results\1 | Result: Zgodne
+2025-12-05 14:38:28 | Left: C:\.Github\Tools\FolderComparator\wzorzec | Right: C:\.temp\results\1 | Result: Zgodne

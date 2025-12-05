@@ -14,7 +14,7 @@ SCRIPT_DIR = Path(__file__).parent.absolute()
 
 # ===== KONFIGURACJA - ZMIEŃ ŚCIEŻKI WEDŁUG POTRZEB =====
 BEYOND_COMPARE_PATH = r"C:\Users\dban\AppData\Local\Programs\Beyond Compare 5\BCompare.exe"
-FOLDER_WZORCOWY_PATH = r"C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ"
+FOLDER_WZORCOWY_PATH = r".\wzorzec"
 REPORT_OUTPUT_PATH = SCRIPT_DIR / "__report.txt"
 # ========================================================
 
@@ -100,8 +100,8 @@ def update_report(report_path, counts):
     content = re.sub(r"Difference Files", "Pliki zmienione", content)
 
     # Remove the "Left Newer Files" and "Right Newer Files" sections
-    content = re.sub(r"Left Newer Files \(0\).*?----------------------------------------------\n\n", "", content, flags=re.DOTALL)
-    content = re.sub(r"Right Newer Files \(0\).*?----------------------------------------------\n\n", "", content, flags=re.DOTALL)
+    content = re.sub(r"Left Newer Files\s*\(0\).*?-{10,}\s*\n", "", content, flags=re.DOTALL)
+    content = re.sub(r"Right Newer Files\s*\(0\).*?-{10,}\s*\n", "", content, flags=re.DOTALL)
     
     # Remove "Size" and "Modified" column headers
     content = re.sub(r"\s+Size\s+Modified", "", content)
@@ -180,6 +180,11 @@ def main():
     # Update the report with analysis summary
     update_report(report_path, counts)
 
+    # Print the report to console
+    print("\n" + "="*60)
+    print(report_path.read_text(encoding="utf-8", errors="ignore"))
+    print("="*60 + "\n")
+
     # Extract left and right folder names from the report header
     left_folder = "Unknown"
     right_folder = "Unknown"
@@ -199,9 +204,9 @@ def main():
         for k, v in non_zero:
             # Print with standardized labels as requested
             if k == "Right Orphan Files":
-                print(f"{Fore.RED}Brakujace pliki: {v}{Style.RESET_ALL}")
-            elif k == "Left Orphan Files":
                 print(f"{Fore.RED}Nowe pliki: {v}{Style.RESET_ALL}")
+            elif k == "Left Orphan Files":
+                print(f"{Fore.RED}Brakujace pliki: {v}{Style.RESET_ALL}")
             elif k == "Difference Files":
                 print(f"{Fore.RED}Pliki rozne: {v}{Style.RESET_ALL}")
         log_test_result(left_folder, right_folder, "Niezgodne")

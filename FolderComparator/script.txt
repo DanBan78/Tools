@@ -1,6 +1,7 @@
 #log normal log.txt
 criteria rules-based
-load "C:\.temp\results\2025-12-04--17-22-44_results_ORYGINALNY_LUKASZ" 
+load "C:\.temp\results\1" 
+filter "-info.txt"
 expand all
 select diff.files
 folder-report layout:summary options:display-mismatches output-to:"C:\.Github\Tools\FolderComparator\__report.txt"
